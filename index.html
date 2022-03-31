@@ -7,8 +7,9 @@
     <title>Weather across the World</title>
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
@@ -24,8 +25,8 @@
 
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="Data.html">Data<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -49,8 +50,35 @@
         </div>
 
     </nav>
+    <div class = 'row'>
+        <div class="col container col-12 col-lg-8">
 
+            <H2>Project information</H2>
+            <a href="visualizations\Temp.html"><img class='image-responsive float-left' width=30%
+                    src="Resources\assets\images\temp.png"
+                    alt="Graph of tempaerature as related to latitude showing loose coorilation between Temperatureand proximity to equator"></a>
+            <p>This project is intended to analyze how various weather conditions are affected by the
+                locations proximity to the equator. To provide analysis data from aproximetely 500 cities was
+                collected from OpenWeather API</p>
+            <p>This project shows that of various weather phenominon only temperature has a
+                coorilation with latitude. The other factors of cloudiness, wind speed, and humidity have no strong
+                coorilation to the locations proximity to the equator.</p>
 
+        </div>
+        <div class="container col col-12 col-lg-3">
+            <div>
+                <H3>Visualizations</H3>
+                <a href="visualizations\Temp.html"><img class='col-3 col-lg-6 img-thumbnail float-left' width='22%'
+                        src="Resources\assets\images\temp.png" alt="Temperature graph"></a>
+                <a href="visualizations\Humidity.html"><img class='col-3 col-lg-6 img-thumbnail float-left' width='22%'
+                        src="Resources\assets\images\humidity.png" alt="Humidity graph"></a>
+                <a href="visualizations\Cloudiness.html"><img class='col-3 col-lg-6 img-thumbnail float-left' width='22%'
+                        src="Resources\assets\images\cloudiness.png" alt="Cloudiness graph"></a>
+                <a href="visualizations\WindSpeed.html"><img class='col-3 col-lg-6 img-thumbnail float-left' width='22%'
+                        src="Resources\assets\images\wind-speed.png" alt="Wind speed graph"></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 
