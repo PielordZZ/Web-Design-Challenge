@@ -7,8 +7,9 @@
     <title>Weather across the World</title>
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
@@ -49,8 +50,26 @@
         </div>
 
     </nav>
-
-
+    <div class="row">
+        <div class="container col col-12 col-lg-8">
+            <h1>Wind Speed</h2>
+            <img class='image-responsive pull-left' src="..\Resources\assets\images\wind-speed.png" alt="Wind speed graph">
+            <p>One could expect windspeed to not have any coorelation with latitude. This is almost entirely the case however there does seem to be more varience of the winds the further the location is from the equator however more data would need to be examined to draw any conclusions</p>
+        </div>
+        <div class="container col col-12 col-lg-3">
+            <div>
+                <H3>Visualizations</H3>
+                <a href="..\visualizations\Temp.html"><img class='col-3 col-lg-6 img-thumbnail float-left' width='22%'
+                        src="..\Resources\assets\images\temp.png" alt="Temperature graph"></a>
+                <a href="..\visualizations\Humidity.html"><img class='col-3 col-lg-6 img-thumbnail float-left'
+                        width='22%' src="..\Resources\assets\images\humidity.png" alt="Humidity graph"></a>
+                <a href="..\visualizations\Cloudiness.html"><img class='col-3 col-lg-6 img-thumbnail float-left'
+                        width='22%' src="..\Resources\assets\images\cloudiness.png" alt="Cloudiness graph"></a>
+                <a href="..\visualizations\WindSpeed.html"><img class='col-3 active col-lg-6 img-thumbnail float-left'
+                        width='22%' src="..\Resources\assets\images\wind-speed.png" alt="Wind speed graph"></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 
